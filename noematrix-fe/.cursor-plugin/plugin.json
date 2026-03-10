@@ -16,8 +16,5 @@
     "mcp",
     "cursor",
     "internal"
-  ],
-  "rules": ["rules"],
-  "skills": ["skills"],
-  "agents": ["agents"]
+  ]
 }

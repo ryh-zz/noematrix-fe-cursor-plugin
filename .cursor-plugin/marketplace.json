@@ -1,16 +1,16 @@
 {
   "name": "noematrix-marketplace",
   "owner": {
-    "name": "NoeMatrix Team"
+    "name": "NoeMatrix Frontend Team"
   },
   "metadata": {
-    "description": "NoeMatrix Cursor 插件集合"
+    "description": "NoeMatrix 团队 Cursor 插件集合"
   },
   "plugins": [
     {
       "name": "noematrix-fe",
-      "source": ".",
-      "description": "NoeMatrix 内网 React + TypeScript + Ant Design 项目插件，内置 Figma、Ant Design、NoeMatrix MCP 工作流及项目规则、技能与验证 Agent"
+      "source": "noematrix-fe",
+      "description": "React + TypeScript + Ant Design 前端项目插件，内置规则、技能与验证 Agent"
     }
   ]
 }
