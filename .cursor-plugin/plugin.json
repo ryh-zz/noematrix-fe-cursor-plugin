@@ -1,5 +1,5 @@
 {
-  "name": "noematrix-FE",
+  "name": "noematrix-fe",
   "version": "1.0.0",
   "description": "NoeMatrix 内网 React + TypeScript + Ant Design 项目插件，内置 Figma、Ant Design、NoeMatrix MCP 工作流及项目规则、技能与验证 Agent",
   "author": {
