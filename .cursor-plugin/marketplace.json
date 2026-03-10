@@ -1,10 +1,10 @@
 {
-  "name": "noematrix-fe-marketplace",
+  "name": "noematrix-marketplace",
   "owner": {
-    "name": "NoeMatrix Frontend Team"
+    "name": "NoeMatrix Team"
   },
   "metadata": {
-    "description": "NoeMatrix 前端团队 Cursor 插件集合"
+    "description": "NoeMatrix Cursor 插件集合"
   },
   "plugins": [
     {
