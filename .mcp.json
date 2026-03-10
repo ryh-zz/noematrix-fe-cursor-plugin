@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "Figma": {
+      "url": "https://mcp.figma.com/mcp",
+      "headers": {},
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--figma-api-key=${FIGMA_API_KEY}",
+        "--stdio"
+      ]
+    },
+    "ant-design": {
+      "url": "http://10.24.55.31:10001/mcp"
+    },
+    "noematrix": {
+      "url": "http://10.24.55.31:10001/nm/mcp"
+    }
+  }
+}

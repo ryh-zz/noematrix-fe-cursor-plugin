@@ -1,0 +1,17 @@
+---
+description: 路由与权限守卫规范
+globs: "{src/routes/**,src/components/ProtectedRoute/**,src/components/AdminRoute/**,src/components/DaqRoute/**}"
+alwaysApply: false
+---
+
+# 路由与权限
+
+- 路由配置在 `src/routes/index.tsx`，使用 `createBrowserRouter`
+- 页面须包裹在 `<Layout>` 内以获得 Header + Sidebar 布局（登录页除外）
+- 权限守卫分三级：
+  - `ProtectedRoute`：仅检查登录状态
+  - `DaqRoute`：登录 + 角色白名单（`allowedRoles` 属性）
+  - `AdminRoute`：登录 + 管理员权限
+- 新增页面路由时：选择合适的守卫包裹，内层用 `<Layout>` 套页面组件
+- 无权限页面重定向到 `/no-access`
+- 未登录重定向到 `/login`

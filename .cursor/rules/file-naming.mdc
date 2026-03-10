@@ -1,0 +1,15 @@
+---
+description: 文件与目录命名规范
+globs: "src/**"
+alwaysApply: false
+---
+
+# 文件与目录命名
+
+- **目录**：`camelCase`（如 `taskManagement`、`myTaskExecution`）
+- **组件文件**：入口为 `index.tsx`，放在同名目录下（如 `components/Header/index.tsx`）
+- **样式文件**：与组件同目录，使用 `.scss` 后缀（如 `components/Header/index.scss`）；禁止使用 `.css`
+- **Figma 生成代码**：放在对应功能目录下的 `ui/` 子目录（如 `pages/myTaskExecution/ui/`）
+- **服务文件**：放在 `src/services/`，`camelCase` 命名（如 `api.ts`、`OSSClient.ts`）
+- **Store 模块**：放在 `src/store/modules/`，`camelCase` 命名（如 `app.ts`）
+- **路径别名**：使用 `@/` 指向 `src/`（如 `import api from '@/services/api'`）

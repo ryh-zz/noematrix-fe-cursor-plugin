@@ -1,0 +1,24 @@
+{
+  "name": "noematrix-FE",
+  "version": "1.0.0",
+  "description": "NoeMatrix 内网 React + TypeScript + Ant Design 项目插件，内置 Figma、Ant Design、NoeMatrix MCP 工作流及项目规则、技能与验证 Agent",
+  "author": {
+    "name": "NoeMatrix Frontend Team"
+  },
+  "license": "UNLICENSED",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "react",
+    "typescript",
+    "ant-design",
+    "noematrix",
+    "figma",
+    "mcp",
+    "cursor",
+    "internal"
+  ],
+  "rules": [".cursor/rules"],
+  "skills": [".cursor/skills"],
+  "agents": [".cursor/agents"],
+  "mcpServers": ".mcp.json"
+}
