@@ -1,4 +1,5 @@
 ---
+name: routing
 description: 路由与权限守卫规范
 globs: "{src/routes/**,src/components/ProtectedRoute/**,src/components/AdminRoute/**,src/components/DaqRoute/**}"
 alwaysApply: false

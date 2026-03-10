@@ -1,4 +1,5 @@
 ---
+name: package-manager
 description: 包管理器约定，安装/管理依赖时触发
 globs: "{package.json,yarn.lock}"
 alwaysApply: true

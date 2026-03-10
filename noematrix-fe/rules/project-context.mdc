@@ -1,5 +1,6 @@
 ---
-description: 
+name: project-context
+description: 项目上下文与文档结构说明，所有代码变更前先读取
 alwaysApply: true
 ---
 

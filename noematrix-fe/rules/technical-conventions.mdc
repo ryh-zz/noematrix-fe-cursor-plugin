@@ -1,4 +1,5 @@
 ---
+name: technical-conventions
 description: 技术硬性约束，所有实现必须遵守
 alwaysApply: true
 ---

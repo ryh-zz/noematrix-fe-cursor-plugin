@@ -1,4 +1,5 @@
 ---
+name: file-naming
 description: 文件与目录命名规范
 globs: "src/**"
 alwaysApply: false
