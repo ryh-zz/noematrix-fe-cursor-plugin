@@ -1,6 +1,6 @@
 {
   "name": "noematrix-fe",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "NoeMatrix 前端项目 React + TypeScript + Ant Design 项目插件，内置项目规则、技能与 子Agent",
   "author": {
     "name": "NoeMatrix Frontend Team"
@@ -16,5 +16,8 @@
     "mcp",
     "cursor",
     "internal"
-  ]
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "agents": "./agents/"
 }

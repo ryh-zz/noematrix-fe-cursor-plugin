@@ -5,7 +5,7 @@
 ## 插件元数据
 
 - **插件名**：`react-antd-noematrix`
-- **版本**：`1.1.0`
+- **版本**：`1.2.0`
 - **发布形态**：内网使用
 - **许可证**：`UNLICENSED`
 - **Logo**：`assets/logo.svg`
