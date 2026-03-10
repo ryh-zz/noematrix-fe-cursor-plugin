@@ -1,0 +1,15 @@
+---
+description: Redux 状态管理规范
+globs: "src/store/**"
+alwaysApply: false
+---
+
+# 状态管理
+
+- 使用 **Redux Toolkit**（`@reduxjs/toolkit`）+ **React Redux**
+- Store 配置在 `src/store/index.ts`，导出类型化 hooks：`useAppDispatch`、`useAppSelector`
+- 新增状态模块放在 `src/store/modules/` 下，使用 `createSlice` 创建
+- 新 slice 需在 `src/store/index.ts` 的 `reducer` 中注册
+- 中间件放在 `src/store/plugins/`，汇总到 `src/store/middlewares.ts`
+- 类型定义：使用已导出的 `RootState`、`AppDispatch`、`AppThunk`
+- 组件中访问 store 一律使用 `useAppSelector` / `useAppDispatch`，不用原始 `useSelector` / `useDispatch`

@@ -17,7 +17,7 @@
     "cursor",
     "internal"
   ],
-  "rules": [".cursor/rules"],
-  "skills": [".cursor/skills"],
-  "agents": [".cursor/agents"]
+  "rules": ["rules"],
+  "skills": ["skills"],
+  "agents": ["agents"]
 }

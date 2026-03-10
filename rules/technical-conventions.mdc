@@ -1,0 +1,13 @@
+---
+description: 技术硬性约束，所有实现必须遵守
+alwaysApply: true
+---
+
+# 技术约定（必须遵守）
+
+- **样式**：颜色用 `src/styles/them.scss` 的 CSS 变量（`--nm-color-*`），间距/字号用 `src/styles/foundations.scss` 的 SCSS 变量（`$nm-*`）；不设置 `font-family`、`line-height`、`letter-spacing`；`font-weight` 仅 400 或 600；SCSS 变量已全局引入，文件顶部无需再引
+- **组件**：Ant Design / NoeMatrix 组件直接使用，不覆盖、不额外加样式；用 Ant Design 替代原始表单控件（Input、Button 等）；表单用 antd Form 组织
+- **MCP**：组件先查 NoeMatrix MCP，没有再查 Ant Design MCP；Figma 生成代码放在对应目录下的 **`ui/`**
+- **其他**：不修改 `src/services/request.ts` 的请求拦截逻辑
+
+细节与步骤见 `.cursor/skills/`：**style-standards**、**component-and-stack**、**technical-best-practices**、**react-antd-dev**。
