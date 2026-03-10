@@ -19,6 +19,5 @@
   ],
   "rules": [".cursor/rules"],
   "skills": [".cursor/skills"],
-  "agents": [".cursor/agents"],
-  "mcpServers": ".mcp.json"
+  "agents": [".cursor/agents"]
 }
