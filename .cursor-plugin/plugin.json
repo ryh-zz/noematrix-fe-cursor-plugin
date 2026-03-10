@@ -1,7 +1,7 @@
 {
   "name": "noematrix-fe",
   "displayName": "NoeMatrix FE",
-  "version": "1.2.1",
+  "version": "12.2",
   "description": "NoeMatrix 前端项目 React + TypeScript + Ant Design 插件，内置规则、技能与验证 Agent",
   "author": {
     "name": "NoeMatrix Frontend Team"
