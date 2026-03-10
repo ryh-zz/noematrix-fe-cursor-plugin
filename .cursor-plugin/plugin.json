@@ -1,12 +1,14 @@
 {
   "name": "noematrix-fe",
-  "version": "1.2.0",
-  "description": "NoeMatrix 前端项目 React + TypeScript + Ant Design 项目插件，内置项目规则、技能与 子Agent",
+  "displayName": "NoeMatrix FE",
+  "version": "1.2.1",
+  "description": "NoeMatrix 前端项目 React + TypeScript + Ant Design 插件，内置规则、技能与验证 Agent",
   "author": {
     "name": "NoeMatrix Frontend Team"
   },
   "license": "UNLICENSED",
-  "logo": "assets/logo.png",
+  "logo": "./assets/logo.png",
+  "repository": "https://github.com/ryh-zz/noematrix-fe-cursor-plugin",
   "keywords": [
     "react",
     "typescript",
