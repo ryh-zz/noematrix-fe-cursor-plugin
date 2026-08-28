@@ -1,0 +1,43 @@
+# 插件校验：每次 push/PR 时检查 .cursor-plugin/plugin.json 与目录结构
+name: Plugin CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate plugin manifest
+        run: |
+          MANIFEST=".cursor-plugin/plugin.json"
+          if [ ! -f "$MANIFEST" ]; then
+            echo "::error::Missing $MANIFEST"
+            exit 1
+          fi
+          # 检查必要字段
+          for key in name version; do
+            if ! grep -q "\"$key\"" "$MANIFEST"; then
+              echo "::error::$MANIFEST must contain \"$key\""
+              exit 1
+            fi
+          done
+          # 简单 JSON 校验
+          if ! python3 -c "import json; json.load(open('$MANIFEST'))"; then
+            echo "::error::$MANIFEST is not valid JSON"
+            exit 1
+          fi
+          echo "plugin.json is valid"
+
+      - name: Check required directories
+        run: |
+          for dir in rules skills agents; do
+            if [ ! -d "$dir" ]; then
+              echo "::warning::Optional directory missing: $dir"
+            fi
+          done

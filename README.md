@@ -42,6 +42,28 @@
 |------|------|
 | `verifier` | 验证已实现工作，执行约束检查与测试汇报 |
 
+## 发布与自动更新（GitHub 仓库）
+
+仓库在 GitHub 时，Team Marketplace 会从该仓库拉取插件；更新随仓库推送生效。
+
+### 管理员侧
+
+1. **开启自动刷新**：Cursor Dashboard → **Settings → Plugins → Team Marketplaces** → 选中本插件源 → 开启 **Enable Auto Refresh**。  
+   推送至默认分支（如 `main`）后，会触发刷新（若未生效可尝试在设置中手动点击 Refresh 或清除 `~/.cursor/plugins/cache/` 后重装）。
+2. **发布新版本**：
+   - 在 `.cursor-plugin/plugin.json` 中修改 `version`（语义化版本，如 `1.2.3`）。
+   - 提交并推送到 `main`（或你的默认分支）。
+   - （可选）打 tag 并推送，以触发 GitHub Release，便于查看版本历史：
+     ```bash
+     git tag v1.2.3
+     git push origin v1.2.3
+     ```
+   - 本仓库已配置 GitHub Actions：推送时校验 `plugin.json`，打 `v*` tag 时创建 Release 并校验版本与 tag 一致。
+
+### 成员侧
+
+- 若团队已开启 Auto Refresh，插件会随仓库更新；若未收到更新，可在 Cursor 插件设置中手动 **Refresh** 或 **卸载后重新安装** 该插件。
+
 ## 安装方式
 
 ### 方式一：Team Marketplace（推荐）
